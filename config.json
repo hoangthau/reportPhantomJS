@@ -1,0 +1,86 @@
+{
+  "title": "Report Title",
+  "date": 86400000,
+  "graphicsObjects": [
+    {
+      "id": "locator-locate-table",
+      "options": {
+        "params": {
+          "listSwitches": [
+            "10.0.0.1",
+            "10.0.0.2",
+            "10.0.0.3"
+          ]
+        },
+        "filters": {
+          "rules": {
+            "and": false,
+            "conditions": [
+              {
+                "have": true,
+                "field": "name",
+                "operator": "contains",
+                "compareValue": "Name",
+                "caseSensitive": false
+              }
+            ],
+            "groups": [
+              {
+                "and": false,
+                "conditions": [
+                  {
+                    "have": true,
+                    "field": "age",
+                    "operator": "greaterThanNumber",
+                    "compareValue": "50",
+                    "caseSensitive": false
+                  }
+                ],
+                "groups": []
+              }
+            ]
+          }
+        },
+        "visibleColumns": [
+          "id",
+          "name",
+          "age",
+          "gender",
+          "phoneNumber",
+          "status",
+          "level"
+        ],
+        "tableFilterColumn": [
+          {
+            "id": "id",
+            "type": 0
+          },
+          {
+            "id": "name",
+            "type": 0
+          },
+          {
+            "id": "age",
+            "type": 1
+          },
+          {
+            "id": "gender",
+            "type": 0
+          },
+          {
+            "id": "phoneNumber",
+            "type": 0
+          },
+          {
+            "id": "status",
+            "type": 0
+          },
+          {
+            "id": "level",
+            "type": 1
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<table class="table table-bordered table-striped ov-table">
+  <thead>
+    <tr>
+      <th ng-repeat="header in tableModel.headers">{{ header.value }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="row in tableModel.rows">
+      <td ng-repeat="header in tableModel.headers">{{ row[header.id] }}</td>
+    </tr>
+  </tbody>
+</table>
